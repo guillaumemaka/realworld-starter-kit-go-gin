@@ -10,7 +10,7 @@ This codebase was created to demonstrate a fully fledged fullstack application b
 
 We've gone to great lengths to adhere to the **Go** community styleguides & best practices.
 
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
+For more information on how this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
 
 # How it works
@@ -23,5 +23,5 @@ For more information on how to this works with other frontends/backends, head ov
 > I will be assuming you are working on a Mac OSX or other UNIX based system. I cannot provide Windows support at this time.
 > ### Installing Go
 > First, [Download Go](https://golang.org/dl/) from the [Official Website](https://golang.org/dl/) for your specific computer (Mac, Linux)
-> Second, follow the [Installation Instructions](https://golang.org/doc/install) from the [Official Website](https://golang.org/doc/install). 
+> Second, follow the [Installation Instructions](https://golang.org/doc/install) from the [Official Website](https://golang.org/doc/install).
 > ## Vendoring & Dependencies
