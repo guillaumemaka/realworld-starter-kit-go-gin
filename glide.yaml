@@ -1,6 +1,14 @@
 package: github.com/chrislewispac/realworld-starter-kit
-import: []
+import:
+- package: github.com/Machiel/slugify
+  version: ^1.0.0
+- package: github.com/jinzhu/gorm
+  version: ^1.0.0
+- package: gopkg.in/gin-gonic/gin.v1
+  version: ^1.1.4
 testImport:
+- package: gopkg.in/testfixtures.v2
+  version: ^2.2.2
 - package: github.com/smartystreets/goconvey
   version: ^1.6.2
   subpackages:
