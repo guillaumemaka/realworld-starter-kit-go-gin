@@ -14,7 +14,6 @@ import (
 	"github.com/Machiel/slugify"
 	"github.com/chrislewispac/realworld-starter-kit/auth"
 	"github.com/chrislewispac/realworld-starter-kit/models"
-	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	"gopkg.in/testfixtures.v2"
 )
@@ -611,7 +610,6 @@ func makeRequest(t *testing.T, method string, url string, body io.Reader, header
 	var recorder = httptest.NewRecorder()
 
 	router := h.InitRoutes()
-	gin.SetMode(gin.ReleaseMode)
 	router.ServeHTTP(recorder, req)
 
 	return recorder

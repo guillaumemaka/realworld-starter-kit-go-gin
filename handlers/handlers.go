@@ -32,7 +32,6 @@ func New(db *models.DB, jwt *auth.JWT, logger *log.Logger) *Handler {
 
 func (h *Handler) authorize() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		h.Logger.Println("----------- authorize() -----------")
 		if claim, _ := c.Get(claimKey); claim != nil {
 			if currentUser, ok := c.Get(currentUserKey); !ok && (currentUser == &models.User{}) {
 				c.Abort()

@@ -74,8 +74,6 @@ func (h *Handler) addComment(c *gin.Context) {
 	a := getFromContext(fetchedArticleKey, c).(*models.Article)
 	u := getFromContext(currentUserKey, c).(*models.User)
 
-	h.Logger.Println("----------- addComment() -----------")
-
 	var commentBody commentBody
 	if err := c.BindJSON(&commentBody); err != nil {
 		c.String(http.StatusUnprocessableEntity, err.Error())

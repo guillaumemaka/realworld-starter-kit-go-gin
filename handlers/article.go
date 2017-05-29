@@ -53,7 +53,7 @@ func (h *Handler) extractArticle() gin.HandlerFunc {
 				c.Set(fetchedArticleKey, a)
 			}
 		}
-		h.Logger.Println("----------- extractArticle() -----------")
+		
 		c.Next()
 	}
 }

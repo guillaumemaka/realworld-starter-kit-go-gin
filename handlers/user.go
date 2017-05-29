@@ -39,7 +39,6 @@ func (h *Handler) getCurrentUser() gin.HandlerFunc {
 		}
 
 		c.Set(currentUserKey, u)
-		h.Logger.Println("----------- getCurrentUser() -----------")
 		c.Next()
 	}
 }
