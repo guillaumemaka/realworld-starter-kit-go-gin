@@ -1,14 +1,34 @@
 package main
 
 import (
-	"fmt"
+	"log"
+	"os"
+
+	"github.com/chrislewispac/realworld-starter-kit/auth"
+	"github.com/chrislewispac/realworld-starter-kit/handlers"
+	"github.com/chrislewispac/realworld-starter-kit/models"
+)
+
+const (
+	DATABASE string = "conduit.db"
+	DIALECT  string = "sqlite3"
+	PORT     string = ":8080"
 )
 
 func main() {
-	fmt.Println("App Started")
-}
+	logger := log.New(os.Stdout, "", log.LstdFlags|log.Lshortfile)
 
-//AddOne a function which takes any integer and adds one to it, returning the sum
-func AddOne(i int) int {
-	return i + 1
+	db, err := models.NewDB(DIALECT, DATABASE)
+	if err != nil {
+		logger.Fatal(err)
+	}
+
+	db.InitSchema()
+
+	j := auth.NewJWT()
+	h := handlers.New(db, j, logger)
+
+	router := h.InitRoutes()
+
+	router.Run(PORT)
 }
