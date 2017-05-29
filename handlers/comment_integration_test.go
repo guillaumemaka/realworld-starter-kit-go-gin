@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/chrislewispac/realworld-starter-kit/models"
+	"github.com/guillaumemaka/realworld-starter-kit-go-gin/models"
 )
 
 func Test_GetComments(t *testing.T) {

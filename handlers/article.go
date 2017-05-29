@@ -7,7 +7,7 @@ import (
 
 	"gopkg.in/gin-gonic/gin.v1"
 
-	"github.com/chrislewispac/realworld-starter-kit/models"
+	"github.com/guillaumemaka/realworld-starter-kit-go-gin/models"
 )
 
 type Article struct {
@@ -53,7 +53,7 @@ func (h *Handler) extractArticle() gin.HandlerFunc {
 				c.Set(fetchedArticleKey, a)
 			}
 		}
-		
+
 		c.Next()
 	}
 }

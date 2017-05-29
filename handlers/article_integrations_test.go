@@ -12,8 +12,8 @@ import (
 	"testing"
 
 	"github.com/Machiel/slugify"
-	"github.com/chrislewispac/realworld-starter-kit/auth"
-	"github.com/chrislewispac/realworld-starter-kit/models"
+	"github.com/guillaumemaka/realworld-starter-kit-go-gin/auth"
+	"github.com/guillaumemaka/realworld-starter-kit-go-gin/models"
 	"github.com/jinzhu/gorm"
 	"gopkg.in/testfixtures.v2"
 )

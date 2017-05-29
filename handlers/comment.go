@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/chrislewispac/realworld-starter-kit/models"
+	"github.com/guillaumemaka/realworld-starter-kit-go-gin/models"
 	"gopkg.in/gin-gonic/gin.v1"
 )
 

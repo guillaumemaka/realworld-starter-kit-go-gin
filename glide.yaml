@@ -1,4 +1,4 @@
-package: github.com/chrislewispac/realworld-starter-kit
+package: github.com/guillaumemaka/realworld-starter-kit-go-gin
 import:
 - package: github.com/Machiel/slugify
   version: ^1.0.0

@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/chrislewispac/realworld-starter-kit/auth"
-	"github.com/chrislewispac/realworld-starter-kit/models"
+	"github.com/guillaumemaka/realworld-starter-kit-go-gin/auth"
+	"github.com/guillaumemaka/realworld-starter-kit-go-gin/models"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	"gopkg.in/gin-gonic/gin.v1"
 )
