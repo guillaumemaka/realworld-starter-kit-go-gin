@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/guillaumemaka/realworld-starter-kit-go-gin.svg?branch=master)](https://travis-ci.org/guillaumemaka/realworld-starter-kit-go-gin)
 
+[![codecov](https://codecov.io/gh/guillaumemaka/realworld-starter-kit-go-gin/branch/master/graph/badge.svg)](https://codecov.io/gh/guillaumemaka/realworld-starter-kit-go-gin)
+
 > ### Go codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
 
 
